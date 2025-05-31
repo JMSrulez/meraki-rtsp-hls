@@ -21,13 +21,13 @@ Ideal for:
 ```bash
 git clone https://github.com/JMSrulez/meraki-rtsp-hls.git
 cd meraki-rtsp-hls
-
+```
 ### 2. Customize your stream
 ```Edit docker-compose.yml and replace RTSP_URL with your Meraki camera's address:
 
 environment:
     - RTSP_URL=rtsp://192.168.128.91:9000/live
-
+```
 ### 3. Launch with Docker Compose
 ```docker compose up -d
-
+```
