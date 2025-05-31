@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  meraki-stream:
+    build: .
+    container_name: meraki_rtsp_hls
+    ports:
+      - "8080:80"
+    volumes:
+      - ./stream:/usr/share/nginx/html/stream
+    restart: unless-stopped
